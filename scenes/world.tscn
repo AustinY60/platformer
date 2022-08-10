@@ -390,5 +390,15 @@ position = Vector2( 634, 102 )
 [node name="swinging trap3" parent="." instance=ExtResource( 3 )]
 position = Vector2( 552, 64 )
 
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Label" type="Label" parent="CanvasLayer/Control"]
+margin_right = 40.0
+margin_bottom = 14.0
+
 [editable path="Area2D3/DoorAndButton"]
 [editable path="SpinningBlade"]

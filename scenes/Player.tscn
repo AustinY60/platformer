@@ -3,8 +3,9 @@
 [ext_resource path="res://scenes/Player.gd" type="Script" id=1]
 [ext_resource path="res://sprites/hero/herochar_spritesheet(new).png" type="Texture" id=2]
 
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 5.42279, 6.92616 )
+[sub_resource type="CapsuleShape2D" id=11]
+radius = 5.0
+height = 5.50494
 
 [sub_resource type="Animation" id=2]
 resource_name = "Idle"
@@ -124,19 +125,21 @@ tracks/0/keys = {
 "values": [ 8, 8, 9, 10, 11, 12 ]
 }
 
-[node name="player" type="KinematicBody2D"]
+[node name="player" type="KinematicBody2D" groups=["Player"]]
 position = Vector2( 2, 0 )
+rotation = 0.00585318
 script = ExtResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 2 )
 hframes = 8
 vframes = 15
-frame = 10
+frame = 41
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -1.10344, 0.686693 )
-shape = SubResource( 1 )
+position = Vector2( -0.999989, 0.0058527 )
+rotation = 0.0943191
+shape = SubResource( 11 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "Idle"

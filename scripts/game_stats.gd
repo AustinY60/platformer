@@ -24,5 +24,9 @@ func get_time():
 	var current_time = OS.get_ticks_msec() - game_start_time
 	var minutes = current_time/1000/60
 	var seconds = current_time/1000%60
-	var msec = current_time%1000/100
+	var msec = current_time%1000/10
+	if minutes < 10:
+		if minutes == 0:
+			minutes = "00"
+		
 	return str(minutes)+":"+str(seconds)+":"+str(msec)

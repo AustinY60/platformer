@@ -28,5 +28,10 @@ func get_time():
 	if minutes < 10:
 		if minutes == 0:
 			minutes = "00"
+		else:
+			minutes = "0"+str(minutes)
+	if seconds < 10:
+		if seconds == 0:
+			seconds = "00"
 		
 	return str(minutes)+":"+str(seconds)+":"+str(msec)

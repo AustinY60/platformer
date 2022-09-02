@@ -5,7 +5,7 @@
 
 [sub_resource type="CapsuleShape2D" id=11]
 radius = 5.0
-height = 5.50494
+height = 4.1197
 
 [sub_resource type="Animation" id=2]
 resource_name = "Idle"
@@ -137,8 +137,7 @@ vframes = 15
 frame = 41
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -0.999989, 0.0058527 )
-rotation = 0.0943191
+position = Vector2( 5.96046e-08, 0 )
 shape = SubResource( 11 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
